@@ -5,4 +5,4 @@ DATASET LINK:-
 // IndraEye Dataset: https://www.kaggle.com/datasets/paritoshkaggle1/myindraeye
 
 Change dataset path when you run a model as per environment
-The environment setting which i used for implimentation my model is discussed in research paper ensure to keep same environment for similar result
+The environment setting which i used for implimentation of my model is discussed in research paper ensure to keep same environment for similar result
