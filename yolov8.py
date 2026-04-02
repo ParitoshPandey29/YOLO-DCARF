@@ -4,7 +4,7 @@ import sys
 import torch
 import torch.nn as nn
 
-print("YOLO-AIR (Optimized Training Configuration)\n" + "=" * 45)
+print("YOLO-DCARF (Optimized Training Configuration)\n" + "=" * 45)
 
 # -------------------------------------------------------------------------
 # STEP 1: ENVIRONMENT AND DATASET CONFIGURATION
@@ -94,7 +94,7 @@ model_v8.train(
 )
 
 # -------------------------------------------------------------------------
-# STEP 3: TRAIN YOLOv5m (Medium)
+# STEP 3: TRAIN YOLOv8m (Medium)
 # -------------------------------------------------------------------------
 print("\n" + "="*20 + " STARTING YOLOv5m " + "="*20)
 
