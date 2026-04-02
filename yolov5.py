@@ -9,7 +9,7 @@ print("YOLO-DCARF (Optimized Training Configuration)\n" + "=" * 45)
 # -------------------------------------------------------------------------
 # STEP 1: ENVIRONMENT AND DATASET CONFIGURATION
 # -------------------------------------------------------------------------
-print("✅ Step 1: Preparing environment...")
+print(" Step 1: Preparing environment...")
 
 dataset_path = '/kaggle/input/hituav-a-highaltitude-infrared-thermal-dataset/hit-uav'
 
@@ -27,7 +27,7 @@ print("-" * 50)
 # -------------------------------------------------------------------------
 # STEP 2: CLONE ULTRALYTICS REPOSITORY
 # -------------------------------------------------------------------------
-print("✅ Step 2: Cloning Ultralytics repository...")
+print(" Step 2: Cloning Ultralytics repository...")
 
 !git clone https://github.com/ultralytics/ultralytics.git --quiet
 sys.path.insert(0, '/kaggle/working/ultralytics')
@@ -53,7 +53,7 @@ data_yaml_content = {
 
 with open('data.yaml', 'w') as f:
     yaml.dump(data_yaml_content, f)
-print("✅ data.yaml ready.")
+print("data.yaml ready.")
 
 # -------------------------------------------------------------------------
 # SHARED HYPERPARAMETERS (Identical to your YOLO-Air run)
@@ -80,7 +80,7 @@ train_args = dict(
 )
 
 # -------------------------------------------------------------------------
-# STEP 2: TRAIN YOLOv8m (Medium)
+# STEP 2: TRAIN YOLOv5m (Medium)
 # -------------------------------------------------------------------------
 print("\n" + "="*20 + " STARTING YOLOv5m " + "="*20)
 # Load pretrained YOLOv8m
