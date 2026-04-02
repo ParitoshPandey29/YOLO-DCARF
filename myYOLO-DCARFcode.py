@@ -1,4 +1,4 @@
-# Kaggle-ready full YOLO-AIR script with DRFB + GatingNetwork + AFRM_v2
+# Kaggle-ready full YOLO-DCARF script with DRFB + GatingNetwork + AFRM_v2
 # Copy-paste into a Kaggle notebook cell and run. Adjust `dataset_path` if needed.
 
 import os
@@ -8,12 +8,12 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-print("YOLO-AIR (Kaggle-ready) — DRFB + Gating + AFRM_v2\n" + "="*60)
+print("YOLO-DCARF (Kaggle-ready) — DRFB + Gating + AFRM_v2\n" + "="*60)
 
 # -----------------------
 # STEP 0: DATASET PATHS
 # -----------------------
-dataset_path = '/kaggle/input/hituav-a-highaltitude-infrared-thermal-dataset/hit-uav'
+dataset_path = '/kaggle/input/hituav-a-highaltitude-infrared-thermal-dataset/hit-uav'   #change dataset path as per you requirement this path is as per my requirement
 if not os.path.exists(dataset_path):
     print("Warning: dataset_path does not exist. Update dataset_path to your dataset location if needed.")
 os.makedirs('/kaggle/working', exist_ok=True)
@@ -155,7 +155,7 @@ tasks.AFRM = AFRM_v2
 print("✔ GatingNetwork and AFRM_v2 injected into ultralytics.nn.tasks")
 
 # -----------------------
-# STEP 5: WRITE yolo-air.yaml (model definition)
+# STEP 5: WRITE yolo-dcarf.yaml (model definition)
 # -----------------------
 # NOTE: This YAML is a carefully crafted example that wires gating + AFRM into the neck.
 # If you get an index mismatch, see the checklist below to correct indices after model summary.
